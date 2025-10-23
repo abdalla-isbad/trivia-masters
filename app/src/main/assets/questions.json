@@ -1,0 +1,244 @@
+[
+  {
+    "questionText": "Who was the first president of the United States?",
+    "category": "History",
+    "answers": ["George Washington", "Abraham Lincoln", "Thomas Jefferson"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the capital of France?",
+    "category": "Geography",
+    "answers": ["Paris", "London", "Berlin"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "The symbol for this element of the periodic table is...",
+    "category": "Science",
+    "answers": ["Au", "Ag", "Gd"],
+    "correctAnswer": 0,
+    "imageSrc": "img_gold"
+  },
+  {
+    "questionText": "What musical period did Ludwig van Beethoven belong to?",
+    "category": "Art",
+    "answers": ["Baroque", "Classical", "Romantic"],
+    "correctAnswer": 2,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the capital of England?",
+    "category": "Geography",
+    "answers": ["Paris", "London", "Berlin"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the capital of Germany?",
+    "category": "Geography",
+    "answers": ["Paris", "London", "Berlin"],
+    "correctAnswer": 2,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the largest planet in our solar system?",
+    "category": "Science",
+    "answers": ["Earth", "Jupiter", "Mars"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the main ingredient in guacamole?",
+    "category": "History",
+    "answers": ["Tomato", "Avocado", "Pepper"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Who discovered penicillin?",
+    "category": "Science",
+    "answers": ["Marie Curie", "Alexander Fleming", "Louis Pasteur"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Which country is known as the Land of the Rising Sun?",
+    "category": "Geography",
+    "answers": ["Japan", "China", "South Korea"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Who wrote the novel '1984'?",
+    "category": "Art",
+    "answers": ["George Orwell", "Aldous Huxley", "Ray Bradbury"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Which element has the chemical symbol 'O'?",
+    "category": "Science",
+    "answers": ["Gold", "Oxygen", "Silver"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "In what year did the Titanic sink?",
+    "category": "History",
+    "answers": ["1912", "1905", "1898"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the smallest country in the world?",
+    "category": "Geography",
+    "answers": ["Monaco", "Vatican City", "Nauru"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Who painted the Mona Lisa?",
+    "category": "Art",
+    "answers": ["Vincent Van Gogh", "Leonardo da Vinci", "Pablo Picasso"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the hardest natural substance on Earth?",
+    "category": "Science",
+    "answers": ["Gold", "Iron", "Diamond"],
+    "correctAnswer": 2,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Who is this man?",
+    "category": "Politics",
+    "answers": ["Putin Stalinslav", "Josef Stalin", "Vladimir Putin"],
+    "correctAnswer": 2,
+    "imageSrc": "img_putin"
+  },
+  {
+    "questionText": "Who is this man?",
+    "category": "History",
+    "answers": ["Alexander Graham Bell", "Daniel Larson", "Alan Turing"],
+    "correctAnswer": 2,
+    "imageSrc": "img_turing"
+  },
+  {
+    "questionText": "What country's flag is this?",
+    "category": "Geography",
+    "answers": ["Netherlands", "Japan", "South Korea"],
+    "correctAnswer": 2,
+    "imageSrc": "img_korea"
+  },
+  {
+    "questionText": "What country's flag is this?",
+    "category": "Geography",
+    "answers": ["Spain", "Bosnia", "Catalunya"],
+    "correctAnswer": 2,
+    "imageSrc": "img_cat"
+  },
+  {
+    "questionText": "What is the name of this painting?",
+    "category": "Geography",
+    "answers": ["Night time", "Bedroom in Arles", "The Starry Night"],
+    "correctAnswer": 2,
+    "imageSrc": "img_starry"
+  },
+  {
+    "questionText": "What is the name of this mathematical instrument?",
+    "category": "Science",
+    "answers": ["Percolator", "Contractor", "Protractor"],
+    "correctAnswer": 2,
+    "imageSrc": "img_pro"
+  },
+  {
+    "questionText": "What country's flag is this?",
+    "category": "Geography",
+    "answers": ["Netherlands", "Japan", "South Korea"],
+    "correctAnswer": 1,
+    "imageSrc": "img_japan"
+  },
+  {
+    "questionText": "What country's flag is this?",
+    "category": "Geography",
+    "answers": ["Netherlands", "Japan", "South Korea"],
+    "correctAnswer": 0,
+    "imageSrc": "img_nether"
+  },
+
+  {
+    "questionText": "Where is this monument Located?",
+    "category": "Geography",
+    "answers": ["Barcelona, Spain", "Berlin, Germany", "Paris, France"],
+    "correctAnswer": 0,
+    "imageSrc": "img_familia"
+  },
+
+  {
+    "questionText": "229 + 24 =",
+    "category": "Science",
+    "answers": ["253", "243", "244"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+
+  {
+    "questionText": "75 +18 + 7 - 50 =",
+    "category": "Science",
+    "answers": ["50", "70", "88"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+
+  {
+    "questionText": "Veni, vidi, vici... Who said this?",
+    "category": "History",
+    "answers": ["Julius Caesar", "Jesus", "Dalai Lama"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the currency of Japan?",
+    "category": "History",
+    "answers": ["Yen", "Won", "Yuan"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Which vitamin is primarily obtained from sunlight?",
+    "category": "Science",
+    "answers": ["Vitamin A", "Vitamin D", "Vitamin C"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the longest river in the world?",
+    "category": "Geography",
+    "answers": ["Amazon River", "Nile River", "Yangtze River"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "Which planet is closest to the Sun?",
+    "category": "Science",
+    "answers": ["Venus", "Mercury", "Mars"],
+    "correctAnswer": 1,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "What is the chemical symbol for salt?",
+    "category": "Science",
+    "answers": ["NaCl", "Co2", "SiO2"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  },
+  {
+    "questionText": "144 x 3 =",
+    "category": "Science",
+    "answers": ["432", "422", "398"],
+    "correctAnswer": 0,
+    "imageSrc": 0
+  }
+]

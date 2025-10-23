@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff7800"
+    tools:context=".Shop">
+
+    <FrameLayout
+        android:id="@+id/cashCounterFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/question_box_background"
+        android:gravity="center"
+        android:minWidth="95dp"
+        app:layout_constraintEnd_toStartOf="@+id/shopText"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/coinImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/coins" />
+
+
+        <TextView
+            android:id="@+id/cashCounterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/broadwayy"
+            android:gravity="center_vertical|start"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/shopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/broadwayy"
+        android:paddingBottom="1dp"
+        android:text="Shop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cashCounterFrame"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/puContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopText">
+
+        <TextView
+            android:id="@+id/skipPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/broadwayy"
+            android:gravity="center_horizontal"
+            android:minWidth="200dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:text="75 coins"
+            android:textColor="#FFFFFF"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeMinTextSize="17sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="120dp"
+            app:layout_constraintTop_toBottomOf="@+id/shopText" />
+
+        <RelativeLayout
+            android:id="@+id/skipButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/skipIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/skipIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/skip"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/buySkipButton"
+                android:tag="skip_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/background_button"
+                android:fontFamily="@font/broadwayy"
+                android:minWidth="120dp"
+                android:text="Purchase skip (0)"
+                android:textColor="#FFFFFF"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:strokeColor="#cf711f"
+                app:strokeWidth="4dp"
+                android:layout_toEndOf="@id/skipIcon"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/doublePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/broadwayy"
+            android:gravity="center_horizontal"
+            android:minWidth="200dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:text="25 coins"
+            android:textColor="#FFFFFF"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeMinTextSize="17sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="120dp"
+            app:layout_constraintTop_toBottomOf="@+id/skipButtonContainer" />
+        <RelativeLayout
+            android:id="@+id/doubleButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/doubleIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/doubleIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/double_points"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/buyDoubleButton"
+                android:tag="double_points"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/background_button"
+                android:fontFamily="@font/broadwayy"
+                android:minWidth="120dp"
+                android:text="Purchase double points (0)"
+                android:textColor="#FFFFFF"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:strokeColor="#cf711f"
+                app:strokeWidth="4dp"
+                android:layout_toEndOf="@id/doubleIcon"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/omitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/broadwayy"
+            android:gravity="center_horizontal"
+            android:minWidth="200dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:text="50 coins"
+            android:textColor="#FFFFFF"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeMinTextSize="17sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="120dp"
+            app:layout_constraintTop_toBottomOf="@+id/doubleButtonContainer" />
+
+        <RelativeLayout
+            android:id="@+id/omitButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/omitIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/omitIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/omit"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/buyOmitButton"
+                android:tag="omit_wrong_answer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/background_button"
+                android:fontFamily="@font/broadwayy"
+                android:minWidth="120dp"
+                android:text="Purchase omit (0)"
+                android:textColor="#FFFFFF"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeMinTextSize="15sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:strokeColor="#cf711f"
+                app:strokeWidth="4dp"
+                android:layout_toEndOf="@id/omitIcon"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:fontFamily="@font/broadwayy"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:orientation="horizontal"
+        android:text="Locked Categories"
+        android:textColor="#FFFFFF"
+        app:autoSizeMaxTextSize="21sp"
+        app:autoSizeMinTextSize="19sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puContainer" />
+
+    <LinearLayout
+        android:id="@+id/lockedCategoryContainer"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp">
+
+        <RelativeLayout
+            android:id="@+id/catButton1Container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/catButton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/catButton1Price"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/broadwayy"
+                android:text="500 coins"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/catButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/catButton1Price"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/background_button"
+                android:fontFamily="@font/broadwayy"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:text="Politics"
+                android:textColor="#FFFFFF"
+                app:strokeColor="#cf711f"
+                app:strokeWidth="4dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/catButton2Container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintStart_toEndOf="@id/catButton1"
+            app:layout_constraintEnd_toStartOf="@id/catButton3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/catButton2Price"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/broadwayy"
+                android:text="1000 coins"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/catButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/background_button"
+                android:text="Art"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/broadwayy"
+                app:strokeColor="#cf711f"
+                app:strokeWidth="4dp"
+                android:layout_below="@id/catButton2Price"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/catButton3Container"
+            android:layout_centerHorizontal="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toEndOf="@id/catButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/catButton3Price"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/broadwayy"
+                android:text="1500 coins"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/catButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/background_button"
+                android:text="Sport"
+                android:fontFamily="@font/broadwayy"
+                android:textColor="#FFFFFF"
+                app:strokeColor="#cf711f"
+                app:strokeWidth="4dp"
+                android:layout_below="@id/catButton3Price"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

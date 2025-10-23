@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/game_select"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ff7800"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Game Mode"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/broadwayy"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/button_standard"
+        android:text="Standard"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/background_button"
+        android:fontFamily="@font/broadwayy"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The classic way to play."
+        android:padding="8dp"
+        android:fontFamily="@font/broadwayy"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/button_blitz"
+        android:text="Blitz"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/background_button"
+        android:fontFamily="@font/broadwayy"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Challenge yourself with 5 seconds per question and only one wrong answer allowed."
+        android:padding="8dp"
+        android:fontFamily="@font/broadwayy"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

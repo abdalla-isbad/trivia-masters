@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/question_box_background"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="15dp"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/gameOverText"
+        android:fontFamily="@font/broadwayy"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Game Over"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="1dp"/>
+
+    <TextView
+        android:id="@+id/highScoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/broadwayy"
+        android:text="PERSONAL BEST !"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="#00FF00" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:fontFamily="@font/broadwayy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 12345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/coinImageView"
+            android:layout_width="37dp"
+            android:layout_height="32dp"
+            android:src="@drawable/coins"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/cashTextView"
+            android:fontFamily="@font/broadwayy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="345"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_gravity="center_horizontal"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/background_button"
+        android:fontFamily="@font/broadwayy"/>
+
+</LinearLayout>

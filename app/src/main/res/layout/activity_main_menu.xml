@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff7800"
+    android:gravity="center"
+    android:paddingTop="140dp"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-100dp"
+        android:contentDescription="logo"
+        android:src="@drawable/logo2" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        tools:visibility="visible" />
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Sign Out"
+        android:visibility="gone"
+        android:backgroundTint="@color/background_button"
+        android:fontFamily="@font/broadwayy"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp"
+        />
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/background_button"
+        android:fontFamily="@font/broadwayy"
+        android:text="Play"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/button_shop"
+        android:text="Shop"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/background_button"
+        android:fontFamily="@font/broadwayy"
+
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp" />
+
+    <Button
+        android:id="@+id/button_stats"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/background_button"
+        android:fontFamily="@font/broadwayy"
+        android:text="Stats"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:strokeColor="#cf711f"
+        app:strokeWidth="4dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_vertical">
+
+
+            <Button
+                android:id="@+id/button_quit"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="-70dp"
+                android:layout_weight="3"
+                android:backgroundTint="@color/background_button"
+                android:fontFamily="@font/broadwayy"
+                android:text="Quit"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                app:strokeColor="#cf711f"
+                app:strokeWidth="4dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/button_mute"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:padding="0dp"
+                android:layout_marginLeft="70dp"
+                android:src="@android:drawable/ic_lock_silent_mode_off" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
